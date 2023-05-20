@@ -1,4 +1,5 @@
 import os
+import openai
 import requests
 
 def call_chatgpt_api(message):
