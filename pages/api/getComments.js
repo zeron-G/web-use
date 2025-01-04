@@ -1,7 +1,7 @@
 import { list } from '@vercel/blob';
 
 export default async function handler(req, res) {
-    const { blobs } = await list({ prefix: 'comments/' });
+    const { blobs } = await list({ prefix: 'comments/' , blobName: 'web-use-blob'});
     
     // 拉取所有留言
     const comments = await Promise.all(
